@@ -1,0 +1,288 @@
+*                           { box-sizing: border-box; }
+body                        {padding-top: 650px;  font-family: "Roboto Condensed",sans-serif; }
+.group:before, .group:after { content: " "; /* 1 */  display: table; /* 2 */}
+.group:after                { clear: both;  }
+/* navbar and content*/
+.main-content, .main-nav{
+  position: relative;
+  }
+  .main-nav{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    z-index: 100;
+    font-family: "Oswald",sans-serif;
+    margin-bottom: -60px;
+    }
+  .main-content{
+    padding-top: 80px;
+    /* padding-bottom: 60px; */
+    background-color: #f7f7f7;
+    font-family: "Oswald",sans-serif;
+    /* background-color: grey; */
+  }
+    .main-div-logo{
+      height: 60px;
+      width: 100px;
+      display: inline-block;
+      float: left;
+      margin-left: 20px;
+      }
+    /* link div*/
+    .main-div-link{
+      float: right;
+      }
+      /* link*/
+      .main-div-link a{
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid transparent;
+        padding: 10px 0;
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: 60px;
+        cursor:pointer;
+        transition: transform 0.4s;
+        }
+        .main-div-link a:hover{
+          transform: scale(1.2,1.0);
+
+        }
+        /* link underline */
+        .main-div-link a.chosen{
+          border-color: indianred;
+}
+/* Banner */
+.site-banner{
+  /* background-blend-mode: luminosity; */
+  background: #ccc url("img/bg2.jpg ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
+  border-bottom: 1px solid #ccc;
+  text-align:center;
+  padding-top:130px;
+  color: white;
+  font-family: "Oswald",sans-serif;
+  }
+  .site-banner h1{
+    font-size: 90px;
+    text-shadow: 1px 1px 10px black;
+    text-transform: uppercase;
+    }
+
+  .site-banner span{
+    color: white;
+    display: inline-block;
+    font-size: 34px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+    }
+
+  .site-banner .cta{
+    font-size: 1.5rem;
+    /* background-color: dodgerblue; */
+    background-color: white;
+    color: black;
+    width: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 2px black;
+    /* box-shadow: inset 0 -3px 0 rgba(0,0,0,.3); */
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    }
+    .ctadiv a{
+      cursor:pointer;
+      /* transition: transform 0.2s; */
+      }
+    .ctadiv a:hover{
+      background-color: green;
+      color: white;
+    }
+
+    .nav-fixed, .site-banner{
+      position: fixed;
+      top:0;
+      left:0;
+}
+/* pagecontent */
+.page-section{
+  /* background-color: red; */
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 80px;
+  }
+  .webdesign, .webdevelopment{
+    height: auto;
+    width: 31%;
+    box-shadow: 0px 0px 10px 1px grey;
+    padding: 15px 25px;
+    font-size: 17px;
+    text-align: center;
+    }
+    .webdesign{
+      float: left;
+      padding-bottom: 30px;
+      margin-left: 15px;
+      }
+  .page-section .readmore{
+    color: white;
+    background-color: green;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    /* border-bottom: 1px solid steelblue; */
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: transform 0.4s;
+    }
+    .page-section .readmore:hover{
+      transform: scale(1.2,1.2);
+}
+/* wide banner*/
+.widebanner{
+  background: #ccc url("img/wide4.jpg ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  height: 450px;
+  box-shadow: 0px 10px 8px 1px grey;
+  /* padding-top: 50px;
+   background-blend-mode: luminosity; */
+  }
+  .widebanner span{
+    line-height: 300px;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 2px 10px black;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 15;
+    letter-spacing: 10;
+    }
+  /* .widebanner p{
+    padding-top: 20px;
+    text-shadow: 0px 2px 10px black;
+    font-size:25px;
+    color: white;
+} */
+/*usersPics*/
+.users{
+  margin-top: 10px;
+  width: 100%;
+  height:auto;
+  padding: 20px;
+  display: flex;
+  /* background-color: red; */
+  /* display: block; */
+  }
+  .users .box{
+    height: 90%;
+    box-shadow: 0px 3px 10px 1px grey;
+    flex-basis: 30%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px 15px 20px 15px;
+    /* background-color: grey; */
+    }
+    .users .box .imagebox{
+      height: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: center;    /*to set at the vertical center of parent div*/
+      /* background-color: yellow; */
+      }
+      .users .box .image{
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        margin: auto;
+        border-radius: 50%;
+        border:4px solid black;
+        overflow: hidden;
+        /* border-style: outset; */
+        /* -ms-transform: rotate(45deg);
+        transform: rotate(45deg); */
+        }
+      .users .box .name{
+        width: 100%;
+        height: 40%;
+        border-radius: 15px 15px 0px 0px;
+        text-align: center;
+        padding: 20px 10px;
+        /* border-bottom: 4px solid black; */
+        /* background-color:white; */
+      }
+        .users .box .name .name1{
+          font-weight: 750;
+          font-size: 20px;
+        }
+        .users .box .name .des1{
+          font-size: 20px;
+          margin-top: 15px;
+          font-style:oblique;
+          /* font-style: italic; */
+}
+/*userstaglines*/
+.userstagline{
+  width: 60%;
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+  }
+  .userstagline span{
+    font-size: 30px;
+    font-weight:600;
+    color:#1f1f1f;
+    border-width: medium;
+    border-bottom-style:solid;
+    letter-spacing: 4 ;
+    }
+  .shortpara{
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    }
+  hr{
+    width: 40%;
+    border-color: red;
+    border-width: thick;
+    border-style: solid;
+    background-color: red;
+    border-radius: 20px;
+}
+
+footer{
+  width: 100%;
+  height: 65px;
+  background-color: black;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* end */
