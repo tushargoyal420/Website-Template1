@@ -2,4 +2,4 @@
 Website development using html and css
 
 Website Link:
-https://tushargoyal420.github.io/Website-Template1/
+https://tushargoyal420.github.io/Website1-Template1/
