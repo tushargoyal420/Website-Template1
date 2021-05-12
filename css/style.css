@@ -63,7 +63,7 @@ body                        {padding-top: 650px;  font-family: "Roboto Condensed
 /* Banner */
 .site-banner{
   /* background-blend-mode: luminosity; */
-  background: #ccc url("img/bg2.jpg ");
+  background: #ccc url("../img/bg2.jpg ");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -157,7 +157,7 @@ body                        {padding-top: 650px;  font-family: "Roboto Condensed
 }
 /* wide banner*/
 .widebanner{
-  background: #ccc url("img/wide4.jpg ");
+  background: #ccc url("../img/wide4.jpg ");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
